@@ -1,10 +1,11 @@
 from django.test import TestCase
 
-from album.apps import AlbumConfig
-from album.models import Artists
+from album.models import Albums
+
+
 
 # Create your tests here.
-for album in AlbumConfig.Albums:
-    for track in Artists.Tracks:
+for album in Albums.objects.all():
+    for track in album.Tracks:
         print(track.name)
 
