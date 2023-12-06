@@ -4,7 +4,7 @@ from django.test import TestCase
 # views.py または任意の適切な場所に以下のコードを追加します。
 
 from django.shortcuts import render
-from .models import Albums, Tracks
+
 
 def your_view_function(request):
     # アルバムをすべて取得
