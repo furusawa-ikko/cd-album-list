@@ -3,7 +3,7 @@ FROM python:3.10
 COPY . /opt/cdli
 WORKDIR /opt/cdli
 
-RUN poetry init
+RUN pip install -r requirements.txt
 ENV FLASK_APP app.py
 
 EXPOSE 8000
