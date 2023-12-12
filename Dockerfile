@@ -1,6 +1,6 @@
 Dockerfile
 # ベースイメージとしてPythonの公式イメージを使用
-FROM python:3.8-slim
+FROM python:3.10
 
 # アプリケーションのソースコードを保存するディレクトリを指定
 WORKDIR /app
