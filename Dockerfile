@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 ENV FLASK_APP app.py
 
 EXPOSE 8000
-CMD ["run", "8000", "-ti", "-p"]
+CMD ["flask", "run", "-h", "0.0.0.0", "-p", "8000"]
