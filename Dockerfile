@@ -7,4 +7,4 @@ WORKDIR /opt/cdli
 
 
 EXPOSE 8000
-CMD ["run", "-h", "0.0.0.0", "-p", "8000"]
+CMD ["python", "run", "-h", "0.0.0.0", "-p", "8000"]
