@@ -1,10 +1,10 @@
 FROM python:3.10 
 
-COPY . /opt/kinotake 
-WORKDIR /opt/kinotake 
+COPY . /opt/cdli
+WORKDIR /opt/cdli 
 
-RUN pip install -r requirements.txt 
-ENV FLASK_APP app.py 
+RUN apt-get update
+ENV app.py 
 
 EXPOSE 8000 
-CMD ["flask", "run", "-h", "0.0.0.0", "-p", "8000"]
+CMD ["manage.py", "run", "-h", "0.0.0.0", "-p", "8000"]
